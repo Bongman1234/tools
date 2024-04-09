@@ -24,7 +24,7 @@ Invoke-RestMethod -Uri $hookurl -Method Post -ContentType "application/json" -Bo
 $Path = "$env:Temp\ffmpeg.exe"
 
 If (!(Test-Path $Path)){  
-$zipUrl = 'https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-6.0-essentials_build.zip'
+$zipUrl = 'https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-7.0-essentials_build.zip'
 $tempDir = "$env:temp"
 $zipFilePath = Join-Path $tempDir 'ffmpeg-6.0-essentials_build.zip'
 $extractedDir = Join-Path $tempDir 'ffmpeg-6.0-essentials_build'
